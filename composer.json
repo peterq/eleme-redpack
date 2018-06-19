@@ -1,0 +1,12 @@
+{
+  "require": {
+    "hanson/vbot": "^2.0",
+    "symfony/debug": "^4.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "src/"
+    },
+    "files": ["src/overwrite/autoload.php"]
+  }
+}

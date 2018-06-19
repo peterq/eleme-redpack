@@ -1,0 +1,17 @@
+version: '3'
+
+networks:
+  common:
+    external: true
+
+services:
+  eleme_redpack:
+    build:
+      context: ./con
+    volumes:
+      - ../:/app/code
+    networks:
+      - default
+      - common
+    working_dir: /app/code
+    command: /bin/sh ./run.sh
