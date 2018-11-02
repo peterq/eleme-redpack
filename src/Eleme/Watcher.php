@@ -131,8 +131,6 @@ class Watcher {
 
     public function addTask($args)
     {
-        println(__LINE__);
-        var_dump($args);
         if (isset($this->added[$args['sn']])) return;
         $this->added[$args['sn']] = 1;
         $this->queue->enqueue([
